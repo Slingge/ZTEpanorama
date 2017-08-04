@@ -24,6 +24,8 @@ android {
                 JPUSH_APPKEY : "dc512b9699f14c32d460cf51", //JPush上注册的包名对应的appkey.
                 JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
         ]
+
+        ndk { abiFilters "armeabi", "armeabi-v7a", "x86", "mips" }
     }
     buildTypes {
         release {
@@ -49,5 +51,5 @@ dependencies {
     compile files('libs/umeng_social_api.jar')
     compile files('libs/SocialSDK_WeChat_Simplify.jar')
     compile files('libs/umeng_shareboard_widget.jar')
-    compile files('libs/tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143.jar')
+
 }

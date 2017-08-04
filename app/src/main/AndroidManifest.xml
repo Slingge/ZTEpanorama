@@ -24,6 +24,7 @@
 
 
 
+
     <application
         android:name=".MyApplication"
         android:hardwareAccelerated="true"
@@ -131,6 +132,13 @@
                 <category android:name="com.ztepanorama" />
             </intent-filter>
         </receiver>
+
+
+        <!--腾讯TBS浏览服务X5内核-->
+        <meta-data
+            android:name="QBSDKAppKey"
+            android:value="Q7xpuMkavjlnT1JB+DounMu3">
+        </meta-data>
 
 
         <!-- 、、、、、、、、、、、、、、、友盟登陆分享、、、、、、、、、、、、、 -->
