@@ -74,7 +74,7 @@ public class WelComeActivity extends BaseActivity {
                          */
                         if (viewPager.getCurrentItem() == adapter.getCount() - 1 && !flag) {
                             SharedPreferencesUtil.putSharePre(WelComeActivity.this, "isFirst", true);
-                            startActivity(new Intent(WelComeActivity.this, MainActivity.class));
+                            startActivity(new Intent(WelComeActivity.this, VideoActivity.class));
                             finish();
                         }
                         flag = true;

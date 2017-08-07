@@ -41,7 +41,7 @@ public class StartUpActivity extends BaseActivity {
                 if (!isFirst) {
                     startActivity(new Intent(StartUpActivity.this, WelComeActivity.class));
                 } else {
-                    startActivity(new Intent(StartUpActivity.this, MainActivity.class));
+                    startActivity(new Intent(StartUpActivity.this, VideoActivity.class));
                 }
                 finish();
             }
